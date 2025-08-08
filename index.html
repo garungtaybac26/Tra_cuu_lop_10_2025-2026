@@ -3,31 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tra cứu Lớp học</title>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f9; }
-        .container { max-width: 600px; margin: 0 auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        h1 { text-align: center; color: #333; }
-        p { text-align: center; color: #666; }
-        .input-group { display: flex; gap: 10px; margin-bottom: 20px; }
-        input[type="text"] { flex-grow: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; }
-        button { padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
-        button:hover { background-color: #0056b3; }
-        .result { margin-top: 20px; padding: 15px; border: 1px solid #e0e0e0; border-radius: 4px; background-color: #f9f9f9; }
-        .result p { margin: 5px 0; text-align: left; }
-        .result p strong { color: #333; }
-        #results-container { min-height: 50px; }
-    </style>
+    <title>Tra cứu thông tin học sinh</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
-        <h1>Tra cứu Lớp học</h1>
-        <p>Vui lòng nhập họ và tên của học sinh:</p>
+        <h1>Tra cứu thông tin học sinh</h1>
+        <p>Vui lòng nhập họ và tên học sinh để tra cứu.</p>
         <div class="input-group">
-            <input type="text" id="studentNameInput" placeholder="Ví dụ: VÌ THỊ PHƯƠNG DUNG">
-            <button onclick="searchStudent()">Tra cứu</button>
+            <input type="text" id="studentNameInput" placeholder="Ví dụ: Tòng Nhật Duy">
+            <button onclick="searchStudent()">Tìm kiếm</button>
         </div>
-        <div id="results-container"></div>
+        
+        <div id="results-container">
+            </div>
     </div>
 
     <script src="data.js"></script>
